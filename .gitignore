@@ -1,0 +1,10 @@
+build
+stuff
+dataplex.xcodeproj/project.xcworkspace/xcuserdata
+dataplex.xcodeproj/xcuserdata
+dataplex.xcworkspace/xcuserdata
+conform.xcodeproj/dataplex.xcodeproj/xcuserdata
+conform.xcodeproj/xcuserdata
+conform.xcworkspace/xcuserdata
+Pods
+Podfile.lock
