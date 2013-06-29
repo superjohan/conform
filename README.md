@@ -3,6 +3,8 @@ Conform
 
 **[Get Conform on the App Store.](https://itunes.apple.com/fi/app/conform/id664574539?mt=8)**
 
+**[Watch a demonstration video on YouTube.](http://www.youtube.com/watch?v=nBg02GLqwgs)**
+
 ## App Store description
 
 Conform is an interactive composition for iPad, where complexity leads to less control.
