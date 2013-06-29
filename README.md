@@ -21,7 +21,7 @@ Created by Aero Deko.
 
 ## Notes
 
-Conform uses The Amazing Audio Engine, which is installed via CocoaPods. After cloning the repository, remember to do the following:
+Conform uses [The Amazing Audio Engine](http://theamazingaudioengine.com/), which is installed via [CocoaPods](http://cocoapods.org/). After cloning the repository, remember to do the following:
 
     pod install
     
