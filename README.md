@@ -32,3 +32,11 @@ The project was initially created in 2010, and has been developed very sporadica
 If you do contribute code (or anything else) to the project, I'd be happy to credit you in the app and elsewhere.
 
 The sample sequencer and synth will probably be separated into something else at some point in the future, since I'll be using them in other projects.
+
+## Screenshots
+
+![Screenshot 1](http://a4.mzstatic.com/us/r1000/005/Purple4/v4/fb/fc/13/fbfc1358-bda9-e06c-600e-b01a23cf9286/mzl.ykmaedml.480x480-75.jpg)
+
+![Screenshot 2](http://a3.mzstatic.com/us/r1000/009/Purple4/v4/3c/81/94/3c819406-fe2a-c07a-8497-9356c0d7d59d/mzl.ubqsaunl.480x480-75.jpg)
+
+![Screenshot 3 - default state](http://a1.mzstatic.com/us/r1000/009/Purple/v4/d7/06/64/d70664fe-c4a8-cc5f-d7e3-bdd376d1f399/mzl.gytagvkb.480x480-75.jpg)
