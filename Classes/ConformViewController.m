@@ -399,9 +399,15 @@ NSString * const kHihatLayerAnimationKey = @"hihatAnimation";
 	self.pulseButton.frame = [self _frameForButtonOnColumn:7 row:bottomRow];
 	self.pulseButton.tag = kGenericTag;
 	[self.pulseButton setBackgroundColor:[UIColor blackColor]];
-	// no action yet
 	self.pulseButton.alpha = 0;
 	[self.buttonContainer addSubview:self.pulseButton];
+	
+	UIButton *hiddenPulseButton = [UIButton buttonWithType:UIButtonTypeCustom];
+	hiddenPulseButton.frame = self.pulseButton.frame;
+	self.pulseButton.tag = kGenericTag;
+	hiddenPulseButton.backgroundColor = [UIColor clearColor];
+	[hiddenPulseButton addTarget:self action:@selector(_pulseButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
+	[self.buttonContainer addSubview:hiddenPulseButton];
 	
 	NSMutableArray *hihats = [[NSMutableArray alloc] init];
 	CGFloat offset = 200.0;
@@ -433,6 +439,15 @@ NSString * const kHihatLayerAnimationKey = @"hihatAnimation";
 	[self.view insertSubview:self.boopView aboveSubview:self.hihatContainer];
 }
 
+- (void)_pulseButtonTouched:(id)sender
+{
+	BOOL pulse = [self.sequencer togglePulse];
+	if ( ! pulse)
+	{
+		self.pulseButton.alpha = 0.5;
+	}
+}
+
 - (void)_addAnimationToHihatLayer
 {
 	CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
@@ -454,7 +469,7 @@ NSString * const kHihatLayerAnimationKey = @"hihatAnimation";
 {
 	self.pulseButton.alpha = 0.5;
 	
-	[UIView animateWithDuration:0.5 delay:0 options:0 animations:^{
+	[UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
 		self.pulseButton.alpha = 0;
 	} completion:nil];
 }

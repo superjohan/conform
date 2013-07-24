@@ -39,5 +39,6 @@ typedef void (^SynthPlayedCallback)(NSInteger step, NSInteger note);
 - (void)decrementBank;
 - (void)updateAudioWithSelectedCount:(NSInteger)count;
 - (BOOL)start;
+- (BOOL)togglePulse;
 
 @end

@@ -40,6 +40,8 @@ enum
 	kActiveChannelMax,
 };
 
+const NSInteger ConformPulseNote = 85;
+
 @implementation ConformSequencer
 
 #pragma mark - Private
@@ -87,7 +89,7 @@ enum
 	size_t patternSize = sizeof(NSInteger) * kPatternLength;
 	NSInteger *pattern = malloc(patternSize);
 	memset(pattern, kStepOff, patternSize);
-	pattern[0] = 85;
+	pattern[0] = ConformPulseNote;
 	
 	pulseChannel->pattern = pattern;
 	pulseChannel->sampleRate = self.audioController.audioDescription.mSampleRate;
@@ -426,9 +428,7 @@ enum
 
 - (void)setChannel:(NSInteger)channel step:(NSInteger)step active:(BOOL)active
 {
-//	NSLog(@"chan %d, step %d, active %@", channel, step, active ? @"YES" : @"NO");
-	
-	NSInteger state = active ? kStepOn : kStepOff;	
+	NSInteger state = active ? kStepOn : kStepOff;
 	ConformSequencerChannel *chan = self.channels[kChannelMain];
 	chan->patterns[channel][step] = state;
 }
@@ -516,6 +516,15 @@ enum
 	}
 	
 	return YES;
+}
+
+- (BOOL)togglePulse
+{
+	ConformSynthChannel *channel = self.channels[kChannelPulse];
+	BOOL pulse = (channel->pattern[0] == ConformPulseNote);
+	channel->pattern[0] = pulse ? 0 : ConformPulseNote;
+	
+	return !pulse;
 }
 
 - (void)dealloc
