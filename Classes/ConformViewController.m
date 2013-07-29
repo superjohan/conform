@@ -404,7 +404,7 @@ NSString * const kHihatLayerAnimationKey = @"hihatAnimation";
 	
 	UIButton *hiddenPulseButton = [UIButton buttonWithType:UIButtonTypeCustom];
 	hiddenPulseButton.frame = self.pulseButton.frame;
-	self.pulseButton.tag = kGenericTag;
+	hiddenPulseButton.tag = kGenericTag;
 	hiddenPulseButton.backgroundColor = [UIColor clearColor];
 	[hiddenPulseButton addTarget:self action:@selector(_pulseButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
 	[self.buttonContainer addSubview:hiddenPulseButton];
