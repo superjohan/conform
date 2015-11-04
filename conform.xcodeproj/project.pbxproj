@@ -55,6 +55,7 @@
 		90D062451770BD0100AB188E /* bankplus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D062411770BD0100AB188E /* bankplus@2x.png */; };
 		90D062461770BD0100AB188E /* down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D062421770BD0100AB188E /* down@2x.png */; };
 		90D062471770BD0100AB188E /* reset@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D062431770BD0100AB188E /* reset@2x.png */; };
+		90DB1BAA1BEA957D00D18E49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90DB1BA91BEA957D00D18E49 /* Images.xcassets */; };
 		90EB901E1323B86F0071925E /* dry1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90EB8FBE1323B86D0071925E /* dry1.caf */; };
 		90EB901F1323B86F0071925E /* dry2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90EB8FBF1323B86D0071925E /* dry2.caf */; };
 		90EB90201323B86F0071925E /* dry3.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90EB8FC01323B86D0071925E /* dry3.caf */; };
@@ -107,8 +108,6 @@
 		90EB90A71323C0050071925E /* bankplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 90EB90A51323C0050071925E /* bankplus.png */; };
 		90F1096F176F48B100897501 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F1096B176F48B100897501 /* Default-Landscape.png */; };
 		90F10970176F48B100897501 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F1096C176F48B100897501 /* Default-Landscape@2x.png */; };
-		90F10971176F48B100897501 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F1096D176F48B100897501 /* Icon.png */; };
-		90F10972176F48B100897501 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F1096E176F48B100897501 /* Icon@2x.png */; };
 		9FBAB4C3B0F641B1A3EB02B5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC0B725161F4E4BAA2CE5F4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -172,6 +171,7 @@
 		90D062411770BD0100AB188E /* bankplus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bankplus@2x.png"; sourceTree = "<group>"; };
 		90D062421770BD0100AB188E /* down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down@2x.png"; sourceTree = "<group>"; };
 		90D062431770BD0100AB188E /* reset@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reset@2x.png"; sourceTree = "<group>"; };
+		90DB1BA91BEA957D00D18E49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = conform/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		90EB8FBE1323B86D0071925E /* dry1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dry1.caf; sourceTree = "<group>"; };
 		90EB8FBF1323B86D0071925E /* dry2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dry2.caf; sourceTree = "<group>"; };
 		90EB8FC01323B86D0071925E /* dry3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = dry3.caf; sourceTree = "<group>"; };
@@ -224,8 +224,6 @@
 		90EB90A51323C0050071925E /* bankplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bankplus.png; sourceTree = "<group>"; };
 		90F1096B176F48B100897501 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
 		90F1096C176F48B100897501 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
-		90F1096D176F48B100897501 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		90F1096E176F48B100897501 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		DCC0B725161F4E4BAA2CE5F4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -258,6 +256,7 @@
 				9089DAD71771D0B000618CAB /* ConformAppDelegate.m */,
 				9089DAE01771D0B000618CAB /* ConformViewController.h */,
 				9089DAE11771D0B000618CAB /* ConformViewController.m */,
+				90DB1BA91BEA957D00D18E49 /* Images.xcassets */,
 			);
 			name = conform;
 			path = Classes;
@@ -299,8 +298,6 @@
 				8D1107310486CEB800E47090 /* conform-Info.plist */,
 				90F1096B176F48B100897501 /* Default-Landscape.png */,
 				90F1096C176F48B100897501 /* Default-Landscape@2x.png */,
-				90F1096D176F48B100897501 /* Icon.png */,
-				90F1096E176F48B100897501 /* Icon@2x.png */,
 				907633F9128EDF950062C3B6 /* Graphics */,
 				907633FA128EDF9A0062C3B6 /* Sound */,
 			);
@@ -513,7 +510,6 @@
 				90EB901F1323B86F0071925E /* dry2.caf in Resources */,
 				90EB90201323B86F0071925E /* dry3.caf in Resources */,
 				90EB90211323B86F0071925E /* dry4.caf in Resources */,
-				90F10972176F48B100897501 /* Icon@2x.png in Resources */,
 				90EB90221323B86F0071925E /* dry5.caf in Resources */,
 				909E938117708B31000455C0 /* cp1.caf in Resources */,
 				90EB90231323B86F0071925E /* dry6.caf in Resources */,
@@ -533,8 +529,8 @@
 				90D062461770BD0100AB188E /* down@2x.png in Resources */,
 				90EB902E1323B86F0071925E /* dry17.caf in Resources */,
 				90EB902F1323B86F0071925E /* dry18.caf in Resources */,
+				90DB1BAA1BEA957D00D18E49 /* Images.xcassets in Resources */,
 				90EB90301323B86F0071925E /* dry19.caf in Resources */,
-				90F10971176F48B100897501 /* Icon.png in Resources */,
 				90EB90311323B86F0071925E /* dry20.caf in Resources */,
 				90EB90321323B86F0071925E /* dry21.caf in Resources */,
 				90EB90331323B86F0071925E /* dry22.caf in Resources */,
@@ -643,6 +639,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C7BC549551E28E7C88CF554 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -671,6 +668,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 01A28DDE08732F7C7633D324 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
